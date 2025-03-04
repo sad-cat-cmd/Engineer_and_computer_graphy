@@ -24,7 +24,7 @@ void mapping_X_Y() {
 	}
 }
 
-// shows pattern: <3
+// shows pattern:
 /*MoveToEx(hdc, 100, 0, NULL);
 		   LineTo(hdc, 150, 50);
 		   LineTo(hdc, 150, 550);

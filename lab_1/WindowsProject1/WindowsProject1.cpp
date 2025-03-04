@@ -129,7 +129,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_COMMAND:
         {
             int wmId = LOWORD(wParam);
-            // Разобрать выбор в меню:
             switch (wmId)
             {
             case IDM_ABOUT:
@@ -154,17 +153,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             movements_images(-1, 2);
             show_images(hdc);
 
-            //movements_images(100, 0);
             decrease_images(4);
+            movements_images(450, -400);
             show_images(hdc);
 
-            //movements_images(100, 0);
             mapping_X_Y();
+            movements_images(200, 0);
             show_images(hdc);
 
             EndPaint(hWnd, &ps);
-            // TODO: Добавьте сюда любой код прорисовки, использующий HDC...
-            //EndPaint(hWnd, &ps);
         }
         break;
     case WM_DESTROY:
