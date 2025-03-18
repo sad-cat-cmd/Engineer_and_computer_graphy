@@ -146,20 +146,26 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         {
             PAINTSTRUCT ps;
             HDC hdc = BeginPaint(hWnd, &ps);
-            
+            movements_images(400, 0);
+            decrease_images(3);
             show_images(hdc);
+            sleep_wiev_images(); 
+            FillRect(hdc, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
 
-            movements_images(200, 0);
-            movements_images(-1, 2);
+            movements_images(-get_figure_length(), -2*get_figure_height());
             show_images(hdc);
+            sleep_wiev_images();
+            FillRect(hdc, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
 
             decrease_images(4);
-            movements_images(450, -400);
             show_images(hdc);
+            sleep_wiev_images();
+            FillRect(hdc, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
 
-            mapping_X_Y();
-            movements_images(200, 0);
+            mapping_X_Y_with_shift();
             show_images(hdc);
+            sleep_wiev_images();
+            //FillRect(hdc, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
 
             EndPaint(hWnd, &ps);
         }
