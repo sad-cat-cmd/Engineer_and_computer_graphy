@@ -1,2 +1,52 @@
 ﻿  WindowsProject1.cpp
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(69,56): warning C4244: аргумент: преобразование "_Ty" в "int", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(69,36): warning C4244: аргумент: преобразование "_Ty" в "int", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(72,53): warning C4244: аргумент: преобразование "_Ty" в "int", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(72,33): warning C4244: аргумент: преобразование "_Ty" в "int", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(89,47): warning C4244: =: преобразование "int" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(90,47): warning C4244: =: преобразование "int" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(105,47): warning C4244: =: преобразование "int" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(106,47): warning C4244: =: преобразование "int" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(120,47): warning C4244: =: преобразование "int" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\header.hpp(121,47): warning C4244: =: преобразование "int" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
   WindowsProject1.vcxproj -> C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_1\WindowsProject1\x64\Debug\WindowsProject1.exe
