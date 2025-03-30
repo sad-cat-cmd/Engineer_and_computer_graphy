@@ -146,28 +146,31 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         {
             PAINTSTRUCT ps;
             HDC hdc = BeginPaint(hWnd, &ps);
-            operations_matrix(0, 400, 0);
+            set_move_matrix(get_figure_length(), 0);
+            operations_matrix(0);
             //decrease_images(3.0f);
-            operations_matrix(1, 0.3333f, 0);
+            set_descrease_matrix(0.33333f);
+            operations_matrix(1);
 
             //operations_matrix(1, 0, 0);
             show_images(hdc);
             sleep_wiev_images(); 
             FillRect(hdc, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
-
-            operations_matrix(0, -get_figure_length(), 2 *get_figure_height());
+            
+            set_move_matrix(-get_figure_length(), 2 * get_figure_height());
+            operations_matrix(0);
             //movements_images(-get_figure_length(), -2*get_figure_height());
             show_images(hdc);
             sleep_wiev_images();
             FillRect(hdc, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
-
-            operations_matrix(1, 0.25f, 0);
+            set_descrease_matrix(0.25f);
+            operations_matrix(1);
             //decrease_images(4);
             show_images(hdc);
             sleep_wiev_images();
             FillRect(hdc, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
 
-            operations_matrix(2, 0, 0);
+            operations_matrix(2);
             show_images(hdc);
             //FillRect(hdc, &ps.rcPaint, (HBRUSH)(COLOR_WINDOW + 1));
 
