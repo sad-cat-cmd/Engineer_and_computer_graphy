@@ -1,0 +1,3 @@
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\vs\cm2\x64\Debug\cm2.exe
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\vs\cm2 — копия\x64\Debug\cm2.exe
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_2\x64\Debug\cm2.exe
