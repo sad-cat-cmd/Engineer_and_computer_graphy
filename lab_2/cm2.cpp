@@ -207,7 +207,7 @@ void rokect_animation(HDC memdc, HDC hdc, HWND hWnd) {
     const int ROCKET_H = 146;
     const int SPEED = 5;
     const int FRAMES = 5;
-    const int LEFT_MARGIN = 10;
+    const int LEFT_MARGIN = 50;
 
     RECT rect;
     GetClientRect(hWnd, &rect);
@@ -215,20 +215,20 @@ void rokect_animation(HDC memdc, HDC hdc, HWND hWnd) {
     int x = LEFT_MARGIN;
     int y = rect.bottom - ROCKET_H;
 
-    for (int frame = 0; y > -ROCKET_H; frame++) {
-        SelectObject(memdc, background);
-        BitBlt(hdc, 0, 0, rect.right, rect.bottom, memdc, 0, 0, SRCCOPY);
-
-        SelectObject(memdc, rocket[frame % FRAMES]);
-        BitBlt(hdc, x, y, ROCKET_W, ROCKET_H, memdc, 0, 0, SRCCOPY);
-
-        y -= SPEED;
-
-        Sleep(50);
-    }
-
     SelectObject(memdc, background);
     BitBlt(hdc, 0, 0, rect.right, rect.bottom, memdc, 0, 0, SRCCOPY);
+
+    for (int frame = 0; y > -ROCKET_H; frame++) {
+
+        SelectObject(memdc, rocket[frame % FRAMES]);
+        BitBlt(hdc, x, y, ROCKET_W, ROCKET_H, memdc, 0, 0, SRCINVERT);
+        Sleep(50);
+        BitBlt(hdc, x, y, ROCKET_W, ROCKET_H, memdc, 0, 0, SRCINVERT);
+        y -= SPEED;
+    }
+
+    /*SelectObject(memdc, background);
+    BitBlt(hdc, 0, 0, rect.right, rect.bottom, memdc, 0, 0, SRCCOPY);*/
 }
 
 void demon_animation(HDC memdc, HDC hdc, HWND hWnd) {
