@@ -1,0 +1,5 @@
+﻿  WindowsProject1.cpp
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_5\WindowsProject1\WindowsProject1.cpp(254,29): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_5\WindowsProject1\WindowsProject1.cpp(255,29): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_5\WindowsProject1\WindowsProject1.cpp(256,29): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+  WindowsProject1.vcxproj -> C:\Users\B-ZONE\Desktop\Инженерная_и_компьютерная_графика\lab\Engineer_and_computer_graphy\lab_5\WindowsProject1\x64\Debug\WindowsProject1.exe
